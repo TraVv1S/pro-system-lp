@@ -7,7 +7,7 @@ const Header = () => {
         <header className={styles.block}>
             <div className={styles.wrapper}>
                 <div className={styles.logo}>
-                    <Image src="/images/logo_b.svg" width={100} height={80} alt="pro system logo" />
+                    <Image src="/images/logo_b.svg" width={150} height={50} alt="pro system logo" />
                 </div>
                 <nav className={styles.mainMenu}>
                     <ul>
