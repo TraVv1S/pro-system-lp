@@ -1,0 +1,45 @@
+.section {
+    padding: 30px;
+    background-color: var(--background-main);
+}
+
+.serviceItem {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.content {
+    flex: 1;
+}
+
+.imageWrapper {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 40px;
+
+    & img {
+        object-fit: contain;
+        
+    }
+}
+
+.secondaryButton {
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(270.51deg, #415BC4 0.39%, #363D84 99.61%);
+    width: fit-content;
+    padding: 18px 50px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    color: var(--accent-main);
+    border: 2px solid var(--accent-main);
+    &:hover {
+        background: linear-gradient(270.51deg, #415BC4 0.39%, #363D84 99.61%);
+        color: #fff;
+    }
+}

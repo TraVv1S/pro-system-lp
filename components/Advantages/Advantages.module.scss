@@ -2,9 +2,46 @@
   padding: 30px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .advantageItem {
   padding: 30px;
   background-color: #F5F5F5;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  font-size: 20px;
+
+  & img {
+    object-fit: cover;
+  }
+  & h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  &:has(.background) {
+    grid-row: span 2;
+  }
+
+  & .content {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    padding: 30px 0;
+  }
+}
+
+.main {
+  grid-column: span 2;
+}
+
+.logoItem {
+  grid-column: span 2;
+  background-color: #fff;
+  & img {
+    float: right;
+    opacity: .1;
+  }
 }
