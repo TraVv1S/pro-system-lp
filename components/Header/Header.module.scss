@@ -19,11 +19,17 @@
 // .logo {
 
 // }
-
-.mainMenu ul{
-    display: flex;
-    gap: 10px;
+.mainMenu {
+    font-size: 20px;
+    & ul{
+        display: flex;
+        & li {
+            padding: 10px;
+        }
+    }
 }
+
+
 
 .contactsWrapper {
     display: flex;

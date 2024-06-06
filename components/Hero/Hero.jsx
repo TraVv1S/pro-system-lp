@@ -14,28 +14,58 @@ const Hero = () => {
                 
                 
                 <div className={styles.services}>
+                    
                     <div className={styles.service}>
                         <div className={styles.service_front}>
                             <div className={styles.service_icon}><Image src="/images/printer.svg" width={60} height={60} alt="printer" /></div>
                             <div> Печатная техника</div>
                         </div>
                         <div className={styles.service_reverse}>
-                            <div>Поставка печатного оборудования любого класса</div>
-                            <button className={styles.button}>Подробнее</button>
+                            <div className={styles.text}>Поставка печатного оборудования любого класса</div>
+                            <div className={styles.buttons}>
+                                <button className={styles.button}>Заказать</button>
+                                <a href="#">Подробнее</a>
+                            </div> 
+                        </div>
+                    </div><div className={styles.service}>
+                        <div className={styles.service_front}>
+                            <div className={styles.service_icon}><Image src="/images/toner.svg" width={60} height={60} alt="toner" /></div>
+                            <div> Картриджи</div>
+                        </div>
+                        <div className={styles.service_reverse}>
+                            <div className={styles.text}>Поставка и заправка картриджей и иных расходных материалов для печати</div>
+                            <div className={styles.buttons}>
+                                <button className={styles.button}>Заказать</button>
+                                <a href="#">Подробнее</a>
+                            </div> 
+                        </div>
+                    </div><div className={styles.service}>
+                        <div className={styles.service_front}>
+                            <div className={styles.service_icon}><Image src="/images/service.svg" width={60} height={60} alt="service" /></div>
+                            <div> Сервис и обслуживание</div>
+                        </div>
+                        <div className={styles.service_reverse}>
+                            <div className={styles.text}>Поставка печатного оборудования любого класса</div>
+                            <div className={styles.buttons}>
+                                <button className={styles.button}>Заказать</button>
+                                <a href="#">Подробнее</a>
+                            </div> 
                         </div>
                     </div>
                     <div className={styles.service}>
-                    <div className={styles.service_icon}><Image src="/images/toner.svg" width={60} height={60} alt="toner" /></div>
-                        <div> Картриджи</div>
+                        <div className={styles.service_front}>
+                            <div className={styles.service_icon}><Image src="/images/it.svg" width={60} height={60} alt="it" /></div>
+                            <div> IT аутсорсинг</div>
+                        </div>
+                        <div className={styles.service_reverse}>
+                            <div className={styles.text}>Поставка печатного оборудования любого класса</div>
+                            <div className={styles.buttons}>
+                                <button className={styles.button}>Заказать</button>
+                                <a href="#">Подробнее</a>
+                            </div> 
+                        </div>
                     </div>
-                    <div className={styles.service}>
-                        <div className={styles.service_icon}><Image src="/images/service.svg" width={60} height={60} alt="service" /></div>
-                        <div>Сервис и обслуживание</div>
-                    </div>
-                    <div className={styles.service}>
-                    <div className={styles.service_icon}><Image src="/images/it.svg" width={50} height={60} alt="it" /></div>
-                        <div>IT аутсорсинг</div>
-                    </div>
+                    
                 </div>
                 </div>
                 

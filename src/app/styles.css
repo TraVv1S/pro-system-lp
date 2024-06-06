@@ -1,3 +1,7 @@
+:root {
+    --accent-main: #272D65;
+  }
+
 *, *::before, *::after{
     box-sizing: border-box; 
 }
@@ -17,7 +21,7 @@ html:focus-within{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: var(--accent-main);
 }
 
 img, picture, svg, video, canvas{
