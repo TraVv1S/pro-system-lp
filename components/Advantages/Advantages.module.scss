@@ -1,0 +1,10 @@
+.advantages {
+  padding: 30px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantageItem {
+  padding: 30px;
+  background-color: #F5F5F5;
+}
