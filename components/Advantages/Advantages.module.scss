@@ -1,12 +1,17 @@
 .advantages {
-  padding: 30px;
+  padding: 75px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
+.desc {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
 .advantageItem {
-  padding: 30px;
+  padding: 30px 30px 100px;
   background-color: #F5F5F5;
   position: relative;
   border-radius: 30px;

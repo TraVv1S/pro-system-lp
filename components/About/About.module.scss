@@ -3,24 +3,24 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
     column-gap: 100px;
-    padding: 30px;
-
-    & h2 {
-        font-size: 2rem;
-        color: #1a2e6c;
-      }
+    padding: 75px;
   }
   
   .description {
     grid-column: span 2;
     color: #333;
+    font-size: 24px;
+
+    & p {
+      margin-bottom: 24px;
+    }
   }
   
   .statItem {
     padding-top: 10px;
     
     & .counter {
-        font-size: 2rem;
+        font-size: 70px;
         font-weight: bold;
         display: block;
         color: #1a2e6c;
@@ -29,8 +29,9 @@
 
       & p {
         margin: 0;
-        font-size: 1rem;
+        font-size: 24px;
         color: #333;
+        padding-top: 20px;
       }
   }
 

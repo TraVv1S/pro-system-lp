@@ -58,7 +58,9 @@ body, html{
 
 h2 {
     font-size: 78px;
+    line-height: 70px;
     color: var(--accent-main);
+    margin-bottom: 40px;
 }
 
 section {

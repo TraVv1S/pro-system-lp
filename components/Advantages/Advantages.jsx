@@ -5,8 +5,8 @@ const Advantages = () => {
   return (
     <section className={classes.advantages}>
         <div className={classes.main}>
-          <h2>Преимущества</h2>
-          <p>За 16 лет работы мы познали все тонкости реализации проектов: как эффективно организовывать работу и обеспечивать качественный результат.</p>
+          <h2 className={classes.title}>Преимущества</h2>
+          <p className={classes.desc}> За 16 лет работы мы познали все тонкости реализации проектов: как эффективно организовывать работу и обеспечивать качественный результат.</p>
         </div>
         
         <div className={classes.advantageItem}>

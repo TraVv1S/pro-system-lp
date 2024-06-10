@@ -7,14 +7,20 @@ const Footer = () => {
         <footer className={styles.block}>
             <div className={styles.wrapper}>
                 <div className={styles.contacts}>
-                    <h2>Комплексное обслуживание печатной техники в вашем офисе</h2>
-                    <a href="tel:+78123397058">+7 (812) 339-70-58</a>
-                    <a href="mailto:info@prosystem.spb.ru">info@prosystem.spb.ru</a>
+                    <h3>Комплексное обслуживание печатной техники в вашем офисе</h3>
+                    <div className={styles.links}>
+                        <a href="tel:+78123397058">+7 (812) 339-70-58</a>
+                        <a href="mailto:info@prosystem.spb.ru">info@prosystem.spb.ru</a>
+                    </div>
+                    
                     <div>© 2007-2024 ООО “Про Систем”</div>
                 </div>
                 
                 <nav className={styles.menu}>
-                    <Image src="/images/arrow_up.svg" width={40} height={40} alt="pro system logo" />
+                    <div className={styles.goTop}>
+                        <Image src="/images/arrow_up.svg" width={40} height={40} alt="pro system logo" />
+                    </div>
+                    
                 
                     <ul>
                         <li><a href="#products">Услуги</a></li>

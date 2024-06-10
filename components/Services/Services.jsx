@@ -1,64 +1,35 @@
+import Image from 'next/image';
 import classes from './Services.module.scss'
 
 const Services = () => {
     return (
         <section className={classes.section}>
             <h2>Услуги</h2>
-            <div className={classes.serviceItem}>
-                <div className={classes.imageWrapper}>
-                    <img src="/images/service1.png" alt="Заправка картриджей" />
+            {[0,1,2,3,4,5].map((s,i) => (
+                    <div className={classes.serviceItem}>
+                    <div className={classes.imageWrapper}>
+                        <Image src="/images/service1.png" alt="Заправка картриджей" fill/>
+                    </div>
+                    
+                    <div className={classes.content}> 
+                        <h3>Заправка и восстановление картриджей</h3>
+                        <div className={classes.text}>
+                            <ul>
+                                <li>очищение картриджа от остатков старого тонера и отработки;</li>
+                                <li>количество тонера должно соответствовать ресурсу данной модели картриджа;</li>
+                                <li>правильная сборка картриджа после заправки и ремонта;</li>
+                                <li>замена фотобарабана производится только с попутной заменой ракеля;</li>
+                                <li>ремонт пластиковых частей картриджей производится по технологии термического восстановления пластмассы с использованием армирующих включений;</li>
+                                <li>замена управляющего чипа на картридже.</li>
+                            </ul>
+                        </div>
+                        <button className={classes.secondaryButton}>Оставить заявку</button>
+                    </div>
+                    
                 </div>
-                <div className={classes.content}> 
-                    <h3>Заправка и восстановление картриджей</h3>
-                    <p>Описание услуги...</p>
-                    <button className={classes.secondaryButton}>Оставить заявку</button>
-                </div>
-                
-            </div>
-            <div className={classes.serviceItem}>
-                <div className={classes.imageWrapper}>
-                    <img src="/images/service2.png" alt="Поставка картриджей" />
-                </div>
-                <div className={classes.content}>
-                    <h3>Поставка картриджей</h3>
-                    <p>Описание услуги...</p>
-                    <button className={classes.secondaryButton}>Оставить заявку</button>
-                </div>
-                
-            </div>
-            <div className={classes.serviceItem}>
-                <div className={classes.imageWrapper}>
-                    <img src="/images/service3.png" alt="Поставка оборудования" />
-                </div>
-                <div className={classes.content}>
-                    <h3>Поставка печатного оборудования</h3>
-                    <p>Описание услуги...</p>
-                    <button className={classes.secondaryButton}>Оставить заявку</button>
-                </div>
-                
-            </div>
-            <div className={classes.serviceItem}>
-                <div className={classes.imageWrapper}>
-                    <img src="/images/service4.png" alt="Ремонт принтеров" />
-                </div>
-                <div className={classes.content}>
-                    <h3>Ремонт принтеров</h3>
-                    <p>Описание услуги...</p>
-                    <button className={classes.secondaryButton}>Оставить заявку</button>
-                </div>
-                
-            </div>
-            <div className={classes.serviceItem}>
-                <div className={classes.imageWrapper}>
-                    <img src="/images/service5.png" alt="Сервисное обслуживание" />
-                </div>
-                <div className={classes.content}>
-                    <h3>Сервисное обслуживание</h3>
-                    <p>Описание услуги...</p>
-                    <button className={classes.secondaryButton}>Оставить заявку</button>
-                </div>
-                
-            </div>
+                )) }
+            
+            
         </section>
     )
 }
