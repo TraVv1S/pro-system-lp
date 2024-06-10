@@ -19,7 +19,7 @@ const Hero = () => {
                         ease: [0, 0.71, 0.2, 1.01]
                     }}
                 >
-                    <h1 className={styles.heading}>Комплексное обслуживание IT-инфраструктуры вашего бизнеса</h1>
+                    <h1 className={styles.heading}>Комплексное обслуживание <span>IT-инфраструктуры</span> вашего бизнеса</h1>
                     <motion.button
                         className={styles.button}
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -75,7 +75,7 @@ const Hero = () => {
                     </div>
                     <div className={styles.service}>
                         <div className={styles.service_front}>
-                            <div className={styles.service_icon}><Image src="/images/it.svg" width={60} height={60} alt="it" /></div>
+                            <div className={styles.service_icon}><Image src="/images/it.svg" width={45} height={60} alt="it" /></div>
                             <div> IT аутсорсинг</div>
                         </div>
                         <div className={styles.service_reverse}>

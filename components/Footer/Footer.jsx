@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className={styles.block}>
             <div className={styles.wrapper}>
                 <div className={styles.contacts}>
-                    <h3>Комплексное обслуживание печатной техники в вашем офисе</h3>
+                    <h3>Комплексное обслуживание печатной техники в&nbsp;вашем офисе</h3>
                     <div className={styles.links}>
                         <a href="tel:+78123397058">+7 (812) 339-70-58</a>
                         <a href="mailto:info@prosystem.spb.ru">info@prosystem.spb.ru</a>
@@ -23,7 +23,7 @@ const Footer = () => {
                             </div></a>
                     
                 
-                    <ul>
+                    <ul className={styles.menuList}>
                         <li><a href="#products">Услуги</a></li>
                         <li><a href="#about">О компании</a></li>
                         <li><a href="#advantages">Приемущества</a></li>

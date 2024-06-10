@@ -6,7 +6,7 @@
 }
 
 .desc {
-  font-size: 24px;
+  // font-size: 24px;
   margin-bottom: 40px;
 }
 
@@ -16,13 +16,13 @@
   position: relative;
   border-radius: 30px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: .85em;
 
   & img {
     object-fit: cover;
   }
   & h3 {
-    font-size: 30px;
+    font-size: 1.5em;
     margin-bottom: 20px;
   }
   &:has(.background) {
@@ -49,4 +49,26 @@
     float: right;
     opacity: .1;
   }
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantageItem {
+    &:has(.background) {
+      grid-row: span 1;
+    }
+  }
+  .logoItem {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    padding: 20px;
+  }
+  
 }
