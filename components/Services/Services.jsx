@@ -3,7 +3,7 @@ import classes from './Services.module.scss'
 
 const Services = () => {
     return (
-        <section className={classes.section}>
+        <section className={classes.section} id="products">
             <h2>Услуги</h2>
             {[0,1,2,3,4,5].map((s,i) => (
                     <div className={classes.serviceItem}>

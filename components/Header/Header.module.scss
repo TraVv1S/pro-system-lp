@@ -21,11 +21,15 @@
 // }
 .mainMenu {
     font-size: 20px;
+    font-weight: 500;
     & ul{
         display: flex;
         & li {
             padding: 10px;
         }
+    }
+    a {
+        color: #000;
     }
 }
 
@@ -37,10 +41,13 @@
     gap: 10px;
 }
 
-.contacts a{
-    display: block;
+.contacts {
+    font-size: 20px;
+    font-weight: 600;
+    a{
+        display: block;
+    }
 }
-
 // .icon
 
 // .contacts

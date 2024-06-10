@@ -17,8 +17,10 @@ const raleway = Raleway({ subsets: ['cyrillic'] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
-      <body className={`${raleway.className}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body className={`${raleway.className} ${roboto.className}`}>
         <Header />
         {children}
         <Footer />

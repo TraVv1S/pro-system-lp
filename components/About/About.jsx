@@ -1,8 +1,21 @@
+'use client'
 import classes from './About.module.scss';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section className={classes.section}>
+    <motion.section
+      id="about"
+      className={classes.section}
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01]
+      }}
+    >
       <h2>О нас</h2>
       <div className={classes.description}>
         <p><strong>Pro System</strong> - это команда профессионалов с многолетним опытом в ремонте и обслуживании офисной техники.</p>
@@ -23,7 +36,7 @@ const About = () => {
           <p>Лет на рынке сервиса оргтехники</p>
         </div>
       
-    </section>
+    </motion.section>
   );
 };
 

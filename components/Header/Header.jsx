@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 const Header = () => {
 
     return (
-        <header className={styles.block}>
+        <header className={styles.block} id="home">
             <div className={styles.wrapper}>
                 <div className={styles.logo}>
                     <Image src="/images/logo_b.svg" width={150} height={50} alt="pro system logo" />

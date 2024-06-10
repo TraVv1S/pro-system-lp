@@ -1,16 +1,37 @@
+'use client'
 import Image from 'next/image';
 import styles from './Hero.module.scss'
 import Header from '../Header/Header';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
         <div className={styles.block}>
             <div className={styles.wrapper}>
             <div className={styles.content}>
-                <div className={styles.cta}>
+                <motion.div
+                    className={styles.cta}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.8,
+                        ease: [0, 0.71, 0.2, 1.01]
+                    }}
+                >
                     <h1 className={styles.heading}>Комплексное обслуживание IT-инфраструктуры вашего бизнеса</h1>
-                    <button className={styles.button}>Оставить заявку</button>
-                </div> 
+                    <motion.button
+                        className={styles.button}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1.8,
+                            delay: 0.5,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                    >Оставить заявку</motion.button>
+                </motion.div> 
                 
                 
                 <div className={styles.services}>

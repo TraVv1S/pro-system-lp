@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Contact = () => {
     return (
-        <section className={classes.section}>
+        <section className={classes.section} id="contact">
         <h2>Свяжитесь с нами</h2>
         <div className={classes.content}>
           <div className={classes.timeline}>

@@ -17,9 +17,10 @@ const Footer = () => {
                 </div>
                 
                 <nav className={styles.menu}>
-                    <div className={styles.goTop}>
-                        <Image src="/images/arrow_up.svg" width={40} height={40} alt="pro system logo" />
-                    </div>
+                    <a href="#home">
+                        <div className={styles.goTop}>
+                            <Image src="/images/arrow_up.svg" width={40} height={40} alt="pro system logo" />
+                            </div></a>
                     
                 
                     <ul>
