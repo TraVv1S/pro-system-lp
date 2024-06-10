@@ -72,3 +72,17 @@
   }
   
 }
+
+@media (max-width: 430px) {
+  .advantages {
+    grid-template-columns: 1fr;
+  }
+  .main {
+    grid-column: span 1;
+  }
+  
+  .advantageItem {
+    min-height: 200px;
+  }
+  
+}
