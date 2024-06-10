@@ -21,6 +21,7 @@ const Hero = () => {
                 >
                     <h1 className={styles.heading}>Комплексное обслуживание <span>IT&#8209;инфраструктуры</span> вашего бизнеса</h1>
                     <motion.button
+                        onClick={() => window.modal.showModal()}
                         className={styles.button}
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}

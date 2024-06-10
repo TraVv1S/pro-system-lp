@@ -3,6 +3,7 @@ import About from "../../components/About/About";
 import Advantages from "../../components/Advantages/Advantages";
 import Services from "../../components/Services/Services";
 import Contact from "../../components/Contact/Contact";
+import Modal from "../../components/Modal/Modal";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <Advantages />
       <Contact />
+      <Modal />
     </main>
   );
 }
