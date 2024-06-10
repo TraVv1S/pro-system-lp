@@ -19,7 +19,7 @@ const Hero = () => {
                         ease: [0, 0.71, 0.2, 1.01]
                     }}
                 >
-                    <h1 className={styles.heading}>Комплексное обслуживание <span>IT-инфраструктуры</span> вашего бизнеса</h1>
+                    <h1 className={styles.heading}>Комплексное обслуживание <span>IT&#8209;инфраструктуры</span> вашего бизнеса</h1>
                     <motion.button
                         className={styles.button}
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -66,7 +66,7 @@ const Hero = () => {
                             <div> Сервис и обслуживание</div>
                         </div>
                         <div className={styles.service_reverse}>
-                            <div className={styles.text}>Поставка печатного оборудования любого класса</div>
+                            <div className={styles.text}>Ремонт и сервисное обслуживание печатной техники любого уровня</div>
                             <div className={styles.buttons}>
                                 <button className={styles.button}>Заказать</button>
                                 <a href="#">Подробнее</a>
@@ -79,7 +79,7 @@ const Hero = () => {
                             <div> IT аутсорсинг</div>
                         </div>
                         <div className={styles.service_reverse}>
-                            <div className={styles.text}>Поставка печатного оборудования любого класса</div>
+                            <div className={styles.text}>IT инфраструктура вашего офиса под ключ</div>
                             <div className={styles.buttons}>
                                 <button className={styles.button}>Заказать</button>
                                 <a href="#">Подробнее</a>

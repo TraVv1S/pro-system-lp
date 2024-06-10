@@ -94,7 +94,7 @@ const HomePage = () => {
 
       {/* Contact Us Section */}
       <section className={classes.contactUs}>
-        <h2>Свяжитесь с нами</h2>
+        <h2>Свяжитесь с&nbsp;нами</h2>
         <form className={classes.contactForm}>
           <label>
             Имя

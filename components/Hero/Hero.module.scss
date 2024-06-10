@@ -173,9 +173,27 @@
         position: relative;
         width: 200px;
         height: 180px;
+        padding: 30px;
         &:hover {
-            width: 400px;
+            width: 200px;
+        }
+
+        &_reverse {
+            padding: 20px;
+            font-size: .9rem;
+        }
+
+        .button {
+            padding: 0;
+            border: none;
+            &:hover {
+                all:unset;
+            }
+        }
+        a {
+            display: none;
         }
     }
+    
     
 }
