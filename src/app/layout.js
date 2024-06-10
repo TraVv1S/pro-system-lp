@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { Roboto, Raleway } from 'next/font/google'
-import './styles.css'
+import { Roboto, Raleway } from 'next/font/google';
+import './styles.css';
 
 export const metadata = {
   title: "Pro System - IT Аутсорсинг",
@@ -9,9 +9,9 @@ export const metadata = {
 };
 
 const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
+  subsets: ['cyrillic'],
+  weight: ['400', '500', '700'],
+});
 const raleway = Raleway({ subsets: ['cyrillic'] });
 
 export default function RootLayout({ children }) {
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${raleway.className} ${roboto.className}`}>
+      <body className={`${roboto.className} ${raleway.className} `}>
         <Header />
         {children}
         <Footer />

@@ -2,7 +2,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
-    padding: 75px;
+    padding: 175px 75px;
+    position: relative;
+    margin-bottom: 0;
+  
+    &> img {
+      opacity: .05;
+      z-index: -1;
+      object-fit: cover;
+    }
   }
   
   .description {
@@ -34,13 +42,28 @@
       }
   }
 
-    @media (max-width: 768px) {
-    .description {
-        grid-column: span 3;
-    }
-  
-    .stats {
-      grid-template-columns: 1fr;
+  @media (max-width: 1200px) {
+    .section {
+      gap: 50px;
     }
   }
+
+@media (max-width: 768px) {
+  .section {
+    h2 {
+      grid-column: span 3;
+    }
+  }
+  .description {
+    grid-column: span 3;
+  }
+
+  .statItem {
+    grid-column: span 3;
+    padding: 0 40px;
+  }
   
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
