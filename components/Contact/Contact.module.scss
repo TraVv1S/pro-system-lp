@@ -39,6 +39,8 @@
         border-bottom:  1px solid #000;
         margin-bottom: 28px;
         padding: 10px;
+        font-size: 20px;
+        outline: none;
     }
     & button {
         margin-top: auto;
@@ -58,5 +60,14 @@
     &:hover {
         background: linear-gradient(270.51deg, #415BC4 0.39%, #363D84 99.61%);
         color: #fff;
+    }
+}
+
+.timeline {
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 }
