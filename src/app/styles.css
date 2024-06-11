@@ -47,6 +47,22 @@ input, button, textarea, select{
     font: inherit; 
 }
 
+dialog:-internal-dialog-in-top-layer::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+dialog[open] {
+    animation: show 1s ease normal;
+}
+@keyframes show{
+    from {
+        transform: translateX(-50%) translateY(0);
+    }
+    to {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
 @media (prefers-reduced-motion: reduce){
     html:focus-within {
         scroll-behavior: auto;

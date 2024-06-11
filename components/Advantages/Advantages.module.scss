@@ -3,6 +3,8 @@
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  position: relative;
+
 }
 
 .desc {
@@ -44,12 +46,26 @@
 
 .logoItem {
   grid-column: span 2;
-  background-color: #fff;
+  background-color: transparent;
   & img {
     float: right;
     opacity: .1;
   }
 }
+
+.wave {
+  position: relative;
+  height: 500px;
+  margin: -200px 0 -250px;
+  img {
+    z-index: -1;
+    opacity: .2;
+  }
+}
+//   background: url('/images/waves_bg2.png') no-repeat;
+//   background-size: cover;
+//   width: 100%;
+//   height: 300px;
 
 @media (max-width: 1024px) {
   .advantages {

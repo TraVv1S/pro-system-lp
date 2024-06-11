@@ -3,7 +3,8 @@ import classes from './Advantages.module.scss';
 
 const Advantages = () => {
   return (
-    <section className={classes.advantages} id="advantages">
+    <>
+    <div className={classes.advantages} id="advantages">
         <div className={classes.main}>
           <h2 className={classes.title}>Преимущества</h2>
           <p className={classes.desc}> За 16 лет работы мы познали все тонкости реализации проектов: как эффективно организовывать работу и обеспечивать качественный результат.</p>
@@ -38,7 +39,12 @@ const Advantages = () => {
         <div className={`${classes.logoItem} ${classes.advantageItem}`}>
           <Image src="/images/logo_b.svg" width={150} height={50} alt="pro system logo" />
         </div>
-      </section>
+        
+      </div>
+      <div className={classes.wave}>
+        <Image src='/images/waves_bg2.png' fill alt="" />
+      </div>
+    </>
   );
 };
 

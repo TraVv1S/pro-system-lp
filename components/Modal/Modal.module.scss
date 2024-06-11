@@ -6,7 +6,9 @@
     position: fixed;
     padding: 3rem;
     border-radius: 30px;
-    margin: 200px auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 
     .title {
         margin-bottom: 1rem;
@@ -15,8 +17,17 @@
 
 .close {
     float: right;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(243, 243, 243);
+    }
 }
 
 .contactForm {
