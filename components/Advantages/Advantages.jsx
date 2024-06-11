@@ -42,7 +42,7 @@ const Advantages = () => {
         
       </div>
       <div className={classes.wave}>
-        <Image src='/images/waves_bg2.png' fill alt="" />
+        <Image src='/images/waves_bg4.svg' fill alt="" />
       </div>
     </>
   );

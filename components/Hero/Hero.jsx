@@ -45,8 +45,8 @@ const Hero = () => {
                         <div className={styles.service_reverse}>
                             <div className={styles.text}>Поставка печатного оборудования любого класса</div>
                             <div className={styles.buttons}>
-                                <button className={styles.button}>Заказать</button>
-                                <a href="#">Подробнее</a>
+                                <button className={styles.button} onClick={() => window.modal.showModal()}>Заказать</button>
+                                <a href="#products">Подробнее</a>
                             </div> 
                         </div>
                     </div><div className={styles.service}>
@@ -57,8 +57,8 @@ const Hero = () => {
                         <div className={styles.service_reverse}>
                             <div className={styles.text}>Поставка и заправка картриджей и иных расходных материалов для печати</div>
                             <div className={styles.buttons}>
-                                <button className={styles.button}>Заказать</button>
-                                <a href="#">Подробнее</a>
+                                <button className={styles.button} onClick={() => window.modal.showModal()}>Заказать</button>
+                                <a href="#products">Подробнее</a>
                             </div> 
                         </div>
                     </div><div className={styles.service}>
@@ -69,8 +69,8 @@ const Hero = () => {
                         <div className={styles.service_reverse}>
                             <div className={styles.text}>Ремонт и сервисное обслуживание печатной техники любого уровня</div>
                             <div className={styles.buttons}>
-                                <button className={styles.button}>Заказать</button>
-                                <a href="#">Подробнее</a>
+                                <button className={styles.button} onClick={() => window.modal.showModal()}>Заказать</button>
+                                <a href="#products">Подробнее</a>
                             </div> 
                         </div>
                     </div>
@@ -82,8 +82,8 @@ const Hero = () => {
                         <div className={styles.service_reverse}>
                             <div className={styles.text}>IT инфраструктура вашего офиса под ключ</div>
                             <div className={styles.buttons}>
-                                <button className={styles.button}>Заказать</button>
-                                <a href="#">Подробнее</a>
+                                <button className={styles.button} onClick={() => window.modal.showModal()}>Заказать</button>
+                                <a href="#products">Подробнее</a>
                             </div> 
                         </div>
                     </div>

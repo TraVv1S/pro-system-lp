@@ -28,6 +28,7 @@ const Footer = () => {
                         <li><a href="#about">О компании</a></li>
                         <li><a href="#advantages">Приемущества</a></li>
                         <li><a href="#contact">Контакты</a></li>
+                        <li><a href="https://spb.hh.ru/search/vacancy?L_is_autosearch=false&area=2&ored_clusters=true&employer_id=2780129" target='_blank'>Вакансии</a></li>
                     </ul>
                 </nav>
                 

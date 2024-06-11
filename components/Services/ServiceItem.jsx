@@ -33,7 +33,7 @@ const ServiceItem = ({title, image, text}) => {
                 <div className={`${classes.text} ${roboto.className}`}>
                     {text}
                 </div>
-                <button className={classes.secondaryButton}>Оставить заявку</button>
+                <button onClick={() => window.modal.showModal()} className={classes.secondaryButton}>Оставить заявку</button>
             </div>
             
         </motion.div>

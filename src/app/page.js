@@ -4,6 +4,7 @@ import Advantages from "../../components/Advantages/Advantages";
 import Services from "../../components/Services/Services";
 import Contact from "../../components/Contact/Contact";
 import Modal from "../../components/Modal/Modal";
+import Career from "../../components/Career/Career";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Advantages />
       <Contact />
       <Modal />
+      <Career />
     </main>
   );
 }
