@@ -40,7 +40,7 @@ const Hero = () => {
                     <div className={styles.service}>
                         <div className={styles.service_front}>
                             <div className={styles.service_icon}><Image src="/images/printer.svg" width={60} height={60} alt="printer" /></div>
-                            <div> Печатная техника</div>
+                            <div> Оргтехника</div>
                         </div>
                         <div className={styles.service_reverse}>
                             <div className={styles.text}>Поставка печатного оборудования любого класса</div>
