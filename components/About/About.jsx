@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import classes from './About.module.scss';
 import { motion } from 'framer-motion';
+import AnimatedCounter from '../Counter/AnimatedCounter';
 
 const About = () => {
   return (
@@ -27,17 +28,53 @@ const About = () => {
       
         <div className={classes.statItem}>
           <div>более</div>
-          <div className={classes.counter}> 300</div>
+          <div className={classes.counter}> <AnimatedCounter from={0} to={300} /></div>
+          <motion.div
+            className={classes.border}
+            initial={{ width: 0 }}
+            whileInView={{
+              width: "100%"
+            }}
+            transition={{
+              duration: 6,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          ></motion.div>
           <p>Клиентов обслуживается нашей командой</p>
         </div>
         <div className={classes.statItem}>
           <div>более</div>
-          <div className={classes.counter}>500&nbsp;000</div>
+          <div className={classes.counter}><AnimatedCounter from={40000} to={50000} /></div>
+          <motion.div
+            className={classes.border}
+            initial={{ width: 0 }}
+            whileInView={{
+              width: "100%"
+            }}
+            transition={{
+              duration: 6,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          ></motion.div>
           <p>Картриджей заправляется кадждый год</p>
         </div>
         <div className={classes.statItem}>
           <div>более</div>
-          <div className={classes.counter}>10</div>
+          <div className={classes.counter}><AnimatedCounter from={0} to={10} /></div>
+          <motion.div
+            className={classes.border}
+            initial={{ width: 0 }}
+            whileInView={{
+              width: "100%"
+            }}
+            transition={{
+              duration: 6,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          ></motion.div>
           <p>Лет на рынке сервиса оргтехники</p>
         </div>
       

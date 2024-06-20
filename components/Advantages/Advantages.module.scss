@@ -57,8 +57,9 @@
   position: relative;
   height: 550px;
   margin: -200px 0 -250px;
+  z-index: -10;
   img {
-    z-index: -1;
+    
     opacity: .2;
   }
 }
