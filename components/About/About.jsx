@@ -18,7 +18,7 @@ const About = () => {
         ease: [0, 0.71, 0.2, 1.01]
       }}
     >
-      <Image fill src={"/images/waves_bg1.jpg"} alt="waves background" />
+      <Image fill src={"images/waves_bg1.jpg"} alt="waves background" />
       <h2>О нас</h2>
       <div className={classes.description}>
         <p><strong>Pro System</strong> - это команда профессионалов с многолетним опытом в ремонте и обслуживании офисной техники.</p>

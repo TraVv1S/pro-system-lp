@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './HomePage.module.css';
+import React from "react";
+import classes from "./HomePage.module.css";
 
 const HomePage = () => {
   return (
@@ -16,9 +16,9 @@ const HomePage = () => {
       <section className={classes.aboutUs}>
         <h2>О нас</h2>
         <p>
-          Pro System – это команда профессионалов с многолетним опытом в
-          области обслуживания офисной техники. Наша команда обслуживает
-          более 300 клиентов по всей России и СНГ.
+          Pro System – это команда профессионалов с многолетним опытом в области
+          обслуживания офисной техники. Наша команда обслуживает более 300
+          клиентов по всей России и СНГ.
         </p>
         <div className={classes.stats}>
           <div className={classes.statItem}>
@@ -112,7 +112,13 @@ const HomePage = () => {
             Сообщение
             <textarea name="message"></textarea>
           </label>
-          <button type="submit" className={classes.primaryButton}>Отправить</button>
+          <div
+            class="cf-turnstile"
+            data-sitekey="0x4AAAAAAAgpfdl8sShzIoRP"
+          ></div>
+          <button type="submit" className={classes.primaryButton}>
+            Отправить
+          </button>
         </form>
       </section>
 
