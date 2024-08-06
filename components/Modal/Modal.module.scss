@@ -30,26 +30,6 @@
     }
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0 0;
-
-   
-    & input, textarea {
-        width: 100%;
-        border: none;
-        border-bottom:  1px solid #000;
-        margin-bottom: 28px;
-        padding: 10px;
-        font-size: 1rem;
-        outline: none;
-    }
-    & button {
-        margin-top: auto;
-    }
-}
-
 .button {
     border: 1px solid var(--accent-main);
     border-radius: 16px;

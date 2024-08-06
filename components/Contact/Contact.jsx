@@ -1,3 +1,4 @@
+import Form from "../Form/Form";
 import classes from "./Contact.module.scss";
 import Image from "next/image";
 
@@ -58,31 +59,7 @@ const Contact = () => {
             </li>
           </ul>
         </div>
-        <form className={classes.contactForm} action="sender.php" method="post">
-          <label htmlFor="name">
-            Имя
-            <input type="text" name="name" placeholder="Ваше имя" />
-          </label>
-          <label htmlFor="phone">
-            Телефон
-            <input type="tel" name="phone" placeholder="+7 ___ ___ __ __" />
-          </label>
-          <label htmlFor="email">
-            Email
-            <input type="email" name="email" placeholder="name@email.ru" />
-          </label>
-          <label htmlFor="message">
-            Сообщение
-            <textarea name="message"></textarea>
-          </label>
-          <div
-            class="cf-turnstile"
-            data-sitekey="0x4AAAAAAAgpfdl8sShzIoRP"
-          ></div>
-          <button type="button" className={classes.button}>
-            Отправить
-          </button>
-        </form>
+        <Form />
       </div>
     </section>
   );
